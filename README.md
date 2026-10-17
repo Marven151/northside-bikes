@@ -1,25 +1,22 @@
 # Northside Bikes
 
-A one-page landing site for a fictional bicycle repair &amp; servicing shop, built as a Fiverr portfolio piece for local-business web design.
+A one-page website for a fictional bicycle repair shop in Bristol, made as a sample of local-business web design. The business is invented.
 
 **Live:** https://marven151.github.io/northside-bikes/
 
-![Northside Bikes homepage screenshot](screenshot.jpg)
-
 ## What's on the page
 
-- Sticky header with nav and a "Book a service" call to action
-- Hero section with a receipt-style job ticket as the visual anchor
-- Services &amp; price list (punctures, tune-ups, full services, e-bikes, wheel truing, new bike builds, collection)
-- "How a repair works" — drop off, quote by text, pick up
-- Opening hours, fictional address, and an embedded OpenStreetMap map
-- FAQ built with native `<details>`/`<summary>` accordions
-- A booking form (name, email, bike type, service, date, message) with client-side validation and a success message — it's a demo, so nothing is actually sent anywhere
-- Footer with a clear "demo project" note
+- **Hero** — one sentence, "Fixed same day", with a photograph of a workshop set inside it.
+- **Prices** — the full price list. Click a job and the job ticket beside it fills in with the price and the ready-by time.
+- **How a repair works** — drop, quote, collect, one full-screen panel each.
+- **Hours and location** — opening hours and an embedded OpenStreetMap map.
+- **FAQ** — native `<details>` accordions, no script.
+- **Booking form** — client-side validation with inline messages and a success state. It is a demo, nothing is sent anywhere.
+- **Footer** — the phone number as the headline.
 
 ## Stack
 
-Plain HTML, CSS and vanilla JavaScript. No build step, no frameworks, no dependencies beyond two Google Fonts (Zilla Slab and Karla).
+Plain HTML, CSS and vanilla JavaScript. No build step, no dependencies beyond two Google Fonts (Anton and Work Sans). Respects `prefers-reduced-motion`.
 
 ## Run locally
 
@@ -27,13 +24,10 @@ Plain HTML, CSS and vanilla JavaScript. No build step, no frameworks, no depende
 git clone https://github.com/Marven151/northside-bikes.git
 cd northside-bikes
 python3 -m http.server 8000
-# open http://localhost:8000
 ```
 
-## Note
+Open http://localhost:8000.
 
-Northside Bikes is not a real business. The name, address, prices and reviews implied on this page are invented for demonstration purposes only.
+## Picture credits
 
-## License
-
-MIT — see [LICENSE](LICENSE).
+Photographs from Wikimedia Commons: Alextredz (CC BY-SA 4.0) and Petar Milošević (CC BY-SA 4.0). Linked in the page footer.
