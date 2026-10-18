@@ -13,7 +13,8 @@
 <script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
@@ -40,13 +41,13 @@
         <div class="slip" data-reveal aria-live="polite">
           <h3>Job ticket</h3>
           <p class="meta">Northside Bikes, Foundry Lane workshop</p>
-          <dl>
-            <div class="r"><dt>Job</dt><i></i><dd>#0142</dd></div>
-            <div class="r"><dt>Bike</dt><i></i><dd>Hybrid, blue</dd></div>
-            <div class="r"><dt>Work</dt><i></i><dd id="tk-work">Basic tune-up</dd></div>
-            <div class="r q"><dt>Quote</dt><i></i><dd id="tk-price">£45</dd></div>
-            <div class="r"><dt>Ready</dt><i></i><dd id="tk-ready">1–2 days</dd></div>
-          </dl>
+          <div class="rows">
+            <p class="r"><span>Job</span><i></i><b>#0142</b></p>
+            <p class="r"><span>Bike</span><i></i><b>Hybrid, blue</b></p>
+            <p class="r"><span>Work</span><i></i><b id="tk-work">Basic tune-up</b></p>
+            <p class="r q"><span>Quote</span><i></i><b id="tk-price">£45</b></p>
+            <p class="r"><span>Ready</span><i></i><b id="tk-ready">1–2 days</b></p>
+          </div>
           <p class="fine">Labour only. Parts are always confirmed before we fit them.</p>
         </div>
       </div>
